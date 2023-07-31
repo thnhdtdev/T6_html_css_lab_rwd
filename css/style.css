@@ -1,0 +1,90 @@
+
+/*  mobile sm */
+@media only screen and (max-width: 576px) {
+}
+ /* tablet md */
+@media only screen and (max-width: 768px) {
+}
+/* pc lg  */
+@media only screen and (max-width: 992px) {
+}
+
+/* laptop xl  */
+@media only screen and (max-width: 1200px) {
+}
+.main_menu{
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+.row{
+    clear: both;
+}
+.col{
+    float: left;
+}
+
+.f_p_item>a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.f_p_item>h5{
+    text-align: center;
+    font-weight: bold;
+}
+.f_p_img{
+    position: relative;
+    margin: 10px;
+    transition: 1s all ease;
+}
+.f_p_img:hover{
+transform: translateY(-10px);
+}
+
+.f_p_img img{
+    transition: 1s all ease;
+    box-shadow: 0px 0px 3px 0px #aaa;
+}
+
+.f_p_img:hover img{
+    scale: 1.03;
+}
+.f_p_img:hover .p_icon{
+    right: 10px;
+    visibility: visible;
+    opacity: 1;
+}
+.p_icon{
+    position: absolute;
+    right: -10px;
+    bottom: 40px;
+    transition: 1s all ease;
+    visibility: hidden;
+    opacity: 0;
+}
+.p_icon a{
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 4px;
+    transition: 1s all ease;
+}
+.p_icon a:hover{
+    background: #aaa;
+}
+
+/*  mobile sm */
+@media only screen and (max-width: 576px) {
+}
+ /* tablet md */
+@media only screen and (max-width: 768px) {
+}
+/* pc lg  */
+@media only screen and (max-width: 992px) {
+}
+
+/* laptop xl  */
+@media only screen and (max-width: 1200px) {
+}
