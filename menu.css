@@ -1,0 +1,100 @@
+
+.menu{
+    padding-left: 0;
+    clear: both;
+}
+.menu-item{
+width: 100px;
+float: left;
+list-style: none;
+background: #aaaaaa;
+border-right: 1px solid white;
+text-align: center;
+position: relative;
+z-index: 1;
+ }
+.menu-item:last-child{
+    border-right: none;
+}
+
+.menu-item::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    z-index:-1;
+    transition:all 1s ease;
+}
+
+.menu-item:hover::after{
+    width: 100%;
+}
+
+.menu-link{
+    text-decoration:none;
+    color:yellow;
+}
+
+.menu-item:hover .sub-menu{
+    top: 18px;
+    left:0;
+    pointer-events: all;
+    visibility:visible;
+    opacity: 1;
+}
+
+.sub-menu{
+    padding-left: 0;
+    position: absolute;
+    top: 180px;
+    left:0;
+    transition: all 1s ease;
+    pointer-events: none;
+
+    visibility: hidden;
+    opacity: 0;
+}
+.sub-menu-item{
+    list-style: none;
+    width: 100px;
+    background-color: aqua;
+    border-bottom: 1px solid white;
+}
+
+.sub-menu-link{
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  mobile sm */
+@media only screen and (max-width: 576px) {
+}
+ /* tablet md */
+@media only screen and (max-width: 768px) {
+}
+/* pc lg  */
+@media only screen and (max-width: 992px) {
+}
+
+/* laptop xl  */
+@media only screen and (max-width: 1200px) {
+}
