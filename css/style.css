@@ -214,7 +214,7 @@ a {
 
 
 .hot_deal_box {
-    background:linear-gradient(to bottom,#48434396, #48434396), url(../img/product/hot_deals/deal1.jpg);
+    background: linear-gradient(to bottom, #48434396, #48434396), url(../img/product/hot_deals/deal1.jpg);
     height: 300px;
     width: 700px;
     background-repeat: no-repeat;
@@ -229,16 +229,16 @@ a {
 
 }
 
-.hot_deal_box:hover{
-    /* background-color: #007bff; */
-    background:linear-gradient(to bottom,#007bff80, #007bff80), url(../img/product/hot_deals/deal1.jpg);
-    
+.hot_deal_box:hover {
+    background: linear-gradient(to bottom, #007bffc6, #007bffc6), url(../img/product/hot_deals/deal1.jpg);
+
 }
 
 
-.hot_deals_area_wrap{
+.hot_deals_area_wrap {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
+    flex-wrap: wrap;
     grid-column-gap: 40px;
     justify-content: center;
     width: 100%;
@@ -249,7 +249,248 @@ a {
     text-align: center;
 }
 
-.hot_deal_link{
+.hot_deal_link {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.clients_slider {
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 150px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.item:hover {
+    opacity: 1;
+}
+
+.item {
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.row .main_title {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.main_title h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.main_title p {
+    font-size: 18px;
+    color: #777;
+}
+
+.products {
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.f_p_img {
+    border-radius: 10px;
+    transition: all 0.8s ease;
+
+}
+
+.f_p_img:hover {
+    transform: scale(1.05);
+    transform: translateY(0.2)
+}
+
+.f_p_item {
+
+    text-align: center;
+}
+
+.f_p_item a{
+    color: black;
+    font-size: 16px;
+}
+
+.f_p_item h5{
+    color: #777;
+    font-size: 15px;
+}
+
+
+
+.f_p_img {
+    position: relative;
+}
+
+.p_icon {
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+    transition: all 1s ease;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.p_icon i {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    background-color: white;
+
+
+}
+
+.f_p_img:hover .p_icon {
+    opacity: 1;
+    right: 10px;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.fa-heart:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.fa-cart-shopping:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+
+
+.pagination {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    width: 100%;
+    justify-content: center;
+
+}
+
+.page-link {
+    padding: 10px;
+    color: black;
+}
+
+.page-link:hover {
+    background-color: #1641ff;
+    color: white;
+}
+
+.subscription-area {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: #f9f9ff;
+    margin-top: 100px;
+    padding: 80px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+}
+
+.section-title span {
+    font-size: 14px;
+    color: #777;
+}
+
+.justify-content-center {
+    padding: 20px;
+}
+
+.subscription input {
+    border-radius: 25px;
+    padding: 0 180px 0 25px;
+    line-height: 50px;
+    border: none;
+    position: relative;
+}
+
+.newsl-btn {
+    position: absolute;
+    border-radius: 25px;
+    background-color: #1641ff;
+    color: white;
+    line-height: 50px;
+    border: none;
+    padding: 0 30px;
+    transition: all 0.5s ease;
+}
+
+.newsl-btn:hover {
+    background-color: white;
+    border: solid 1px #1641ff;
+    color: #1641ff;
+}
+
+
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.about {
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 60px;
+    justify-content: center;
+    margin: 100px 200px;
+
+
+}
+
+.footer_title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.single-footer-widget p {
+    color: #777;
+}
+
+.input-group input {
+    border-radius: 10px;
+    padding: 0 100px 0 25px;
+    line-height: 40px;
+    border: none;
+    background-color: #f9f9ff;
+}
+
+.btn {
+    border: none;
+    padding: 4px 11px 0px;
+    line-height: 34px;
+    background-color: #1641ff;
+    color: white;
+    font-weight: 300;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 568px){
+    .about {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+
+}
+
+
